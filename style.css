@@ -166,3 +166,56 @@
   text-align: center;
   padding: 10px 0;
 }
+.speaker-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .speaker-card {
+    display: flex;
+  
+    /* align-items: center; */
+    background-color: #fff; /* Card background */
+    border-radius: 4px; /* Rounded corners for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 400px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .speaker-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 120px;
+    margin-right: 20px;
+  }
+  .speakers_section > h2{
+    text-align: center;
+    padding: 0 10px;
+  }
+  .speaker-info h3 {
+    margin: 0;
+    color: #333; /* Title color */
+    font-size: 1.5em;
+  }
+  
+  .speaker-info .title {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .speaker-info p {
+    color: #333; /* Text color */
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .prof-hr {
+    width: 50px;
+    height: 2px;
+    margin: 0 auto 20px;
+    border: none;
+    background-color: #ff5722; /* Or any other color */
+  }
+       

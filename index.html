@@ -93,10 +93,87 @@
         </div>
        
        </section>
-       <section class="speaker_section">
-        <h1>Feature Section</h1>
-        <div class="underline"></div>
-        
-       </section>
+       
+       <div class="speakers_section">
+        <h2>Featured Speakers</h2>
+        <hr class="underline">
+        <div id="cont" class="speaker-cards-container">
+     
+        </div>
+    </div>
+    
+    <button onclick="getData()"> Get Data </button>
+    
+    
+    <div class="partner-section">
+        <h2>Partner <span class="underline"></span></h2>
+        <div class="logos-container">
+            <!-- Replace src with the path to the actual logo images -->
+            <img src="mozilla-logo.png" alt="Mozilla" class="partner-logo">
+            <img src="google-logo.png" alt="Google" class="partner-logo">
+            <img src="naver-logo.png" alt="NAVER" class="partner-logo">
+            <img src="daumkakao-logo.png" alt="Daum Kakao" class="partner-logo">
+            <img src="airbnb-logo.png" alt="Airbnb" class="partner-logo">
+        </div>
+    </div>
+
+
+
+    <script>
+        const data = [
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "name": "YoChaibenkler",
+          "title": "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+          "description": "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
+          "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      ];
+    
+        function getData(){
+            const speakerCardsContainer = document.getElementById("cont");
+        data.forEach(speaker => {
+           speakerCardsContainer.innerHTML += `<div class="speaker-card">
+                <img src="${speaker.image}" alt="Yochai Benkler" class="speaker-photo">
+                <div class="speaker-info">
+                    <h3>${speaker.title}</h3>
+                    <p class="title">${speaker.title}</p>
+                    <hr class="prof-hr">
+                    <p>${speaker.description}</p>
+                </div>
+            </div>`
+        });
+    
+        }
+    </script>
     </body>
 </html>
